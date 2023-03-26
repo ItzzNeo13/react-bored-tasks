@@ -38,7 +38,7 @@ Finally, a button is rendered which, when clicked, calls the `fetchTasks()` func
 - Errors solved with help of [Stackoverflow.](https://stackoverflow.com/)
 - Data generated with [BoredAPI.](https://www.boredapi.com/)
 - This project was bootstrapped with [React App.](https://github.com/facebook/create-react-app).
-
+- Deployed on Google Firebase
 - - - -
 
 ##### P.S: I genuinely loved the API and to support it contributed a couple of tasks. If you too want to contribute visit the [Contributing Form.](http://www.boredapi.com/contributing)
