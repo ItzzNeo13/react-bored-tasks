@@ -16,7 +16,7 @@ class App extends React.Component {
           .then((response) => {
             // Getting API data:
             const { activity, type, participants, link } = response.data;
-            // console.log(activity, type, participants);
+            // console.log(activity, type, participants); [Debugging]
       
             // Populating initial task state with actual task:
             this.setState({ 
@@ -35,16 +35,23 @@ class App extends React.Component {
         const { activity, type, participants, link } = this.state;
       
         return (
-          <div className="container">
-            <h1 className="heading"><u>Here is a random task for you:</u></h1>
-            <h4 className="txt">Activity:</h4> <p>{activity}.</p>
-            <h4 className="txt">Type:</h4> <p>{type}</p>
-            <h4 className="txt">Participants:</h4> <p>{participants}</p>
-            {/* Will show the link only if the value of link parameter is not null: */}
-            {link && <p className="resource">Resource: <a href={link} target='_blank'> Click here! </a></p>}
-            <button className="button" onClick={this.fetchTasks}><span>Change Task</span></button>
-          </div>
-        );
+            <div>
+                <div className="container">
+                  <h1 className="heading"><u>Here is a random task for you:</u></h1>
+                  <h4 className="txt">Activity:</h4> <p>{activity}.</p>
+                  <h4 className="txt">Type:</h4> <p>{type}</p>
+                  <h4 className="txt">Participants:</h4> <p>{participants}</p>
+                  {/* Will show the link only if the value of link parameter is not null: */}
+                  {link && <p className="resource">Resource: <a href={link} target='_blank'> Click here! </a></p>}
+                  <button className="button" onClick={this.fetchTasks}><span>Change Task</span></button>
+              </div>
+              <div className="redirects">
+                <p><a href="https://github.com/ItzzNeo13/react-bored-tasks/issues">Report Issues</a></p>
+                <br/>
+                <p><a href="https://itzzneo13.netlify.app/contact.html"> Contact Developer</a></p>
+              </div>
+            </div>
+          );
       }
 }
 
