@@ -22,7 +22,7 @@ Overall, this project aims to provide an easy-to-use, interactive platform for p
 
 This code uses the React library to create a component called `App`. This component is a class-based component that contains state data which is initially set to an empty string for the task.
 
-When the component is mounted on the DOM, the `componentDidMount()` lifecycle method is called which then calls the `fetchTasks()` function. This function sends a GET request to the http://www.boredapi.com/api/activity/ API endpoint using the `axios` library. The API response data is then extracted and stored in the component's state data.
+When the component is mounted on the DOM, the `componentDidMount()` lifecycle method is called which then calls the `fetchTasks()` function. This function sends a GET request to the https://www.boredapi.com/api/activity/ API endpoint using the `axios` library. The API response data is then extracted and stored in the component's state data.
 
 In the `render()` method, the state data is accessed using destructuring assignment. The data is then displayed in the JSX markup by rendering it as HTML elements on the webpage.
 
