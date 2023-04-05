@@ -46,9 +46,9 @@ class App extends React.Component {
                   <button className="button" onClick={this.fetchTasks}><span>Change Task</span></button>
               </div>
               <div className="redirects">
-                <p><a href="https://github.com/ItzzNeo13/react-bored-tasks/issues">Report Issues</a></p>
+                <p><a href="https://github.com/ItzzNeo13/react-bored-tasks/issues" target="_blank">Report Issues</a></p>
                 <br/>
-                <p><a href="https://itzzneo13.netlify.app/contact.html"> Contact Developer</a></p>
+                <p><a href="https://itzzneo13.netlify.app/contact.html" target="_blank"> Contact Developer</a></p>
               </div>
             </div>
           );
